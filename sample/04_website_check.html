@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-CA"><head><meta charset="utf-8"><title>Northfield Components Inc. (sample) website accessibility check</title><style>body { font: 11pt/1.5 Arial, Helvetica, sans-serif; color: #1a1a1a; max-width: 780px; margin: 24px auto; padding: 0 16px; }
+h1 { font-size: 20pt; margin: 0 0 4px; }
+h2 { font-size: 14pt; margin: 28px 0 8px; }
+h3 { font-size: 12pt; margin: 18px 0 6px; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0 16px; }
+th, td { border: 1px solid #8a8a8a; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #e8edf3; }
+.meta { color: #4a4a4a; }
+.note { border-left: 4px solid #0b5cad; padding: 4px 12px; background: #f3f6fa; }
+@media print { body { margin: 0; } a { color: inherit; } }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-1F41188HY3"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-1F41188HY3');
+document.addEventListener('click',function(e){var a=e.target.closest('a,button');if(!a)return;
+var n=a.getAttribute('data-track')||((a.getAttribute('href')||'').indexOf('mailto:')===0?'email_click':null);
+if(n)gtag('event',n,{link_text:(a.textContent||'').trim().slice(0,80),link_url:a.getAttribute('href')||'',page_path:location.pathname});});
+</script>
+</head>
+<body>
+<p style="margin:0 0 16px;padding:8px 12px;background:#eef3f8;border-radius:6px;font-size:10.5pt">Fictional sample by <a href="/">AODA Report Desk</a>. <a href="/free-aoda-snapshot.html" data-track="generate_lead">Get a free snapshot for your organization</a>.</p>
+<h1>Website accessibility check</h1>
+<p class="meta">Northfield Components Inc. (sample) · www.example.com · Checked November 10, 2026 against WCAG 2.0 Level AA (excluding 1.2.4 and 1.2.5, as Ontario allows). This is a review of up to 10 pages, not a full audit or a certification.</p>
+
+<h2>Summary</h2>
+<p>We checked 8 pages. The site is in reasonable shape, with 2 priority 1 issues (the quote form cannot be submitted by keyboard; the careers page has unlabeled fields) that block some users and should be fixed first.</p>
+
+<h2>Method</h2>
+<ul>
+<li>Automated scan of each page (axe-core rules mapped to WCAG 2.0 A/AA).</li>
+<li>Manual checks: keyboard-only navigation and visible focus, page titles and headings, link text, image alternative text, colour contrast, form labels and error messages, zoom to 200%, PDFs and video captions.</li>
+<li>Screen reader spot-check on the home page and one form.</li>
+</ul>
+
+<h2>Pages checked</h2>
+<table><tr><th scope="col">Page</th><th scope="col">Url</th><th scope="col">Issues</th></tr><tr><td>Home</td><td>/</td><td>3</td></tr><tr><td>Request a quote form</td><td>/quote</td><td>2</td></tr><tr><td>Careers</td><td>/careers</td><td>2</td></tr><tr><td>Capabilities</td><td>/capabilities</td><td>1</td></tr><tr><td>Contact</td><td>/contact</td><td>0</td></tr></table>
+
+<h2>Issues, highest priority first</h2>
+<p>Priority 1 blocks a task for some users (for example, a form you can't submit by keyboard). Priority 2 makes a task hard. Priority 3 is minor or affects a few pages.</p>
+<table><tr><th scope="col">Priority</th><th scope="col">Issue</th><th scope="col">Wcag</th><th scope="col">Pages</th><th scope="col">Suggested fix</th></tr><tr><td>1</td><td>Quote form submit control is not reachable by keyboard</td><td>2.1.1 Keyboard (A)</td><td>/quote</td><td>Use a native button element</td></tr><tr><td>1</td><td>Form fields have no labels</td><td>1.3.1, 3.3.2 (A)</td><td>/careers</td><td>Add visible label elements</td></tr><tr><td>2</td><td>Light grey body text fails contrast (3.1:1)</td><td>1.4.3 Contrast (AA)</td><td>All</td><td>Darken text to #595959 or darker</td></tr><tr><td>2</td><td>Hero carousel has no pause control</td><td>2.2.2 Pause, Stop, Hide (A)</td><td>/</td><td>Add pause button or remove autoplay</td></tr><tr><td>3</td><td>Decorative images announced with file names</td><td>1.1.1 Non-text content (A)</td><td>/, /capabilities</td><td>Use empty alt for decorative images</td></tr></table>
+
+<h2>Next steps</h2>
+<ol>
+<li>Give this list to whoever maintains your website. Most priority 1 and 2 items are template or theme fixes that repair many pages at once.</li>
+<li>Record the fixes and target dates in your multi-year accessibility plan (Website row).</li>
+<li>Add an accessibility page with your statement, feedback contact and a link to your plan.</li>
+<li>If you'd like us to quote the fixes, reply to this email.</li>
+</ol>
+</body></html>
