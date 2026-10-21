@@ -1,0 +1,26 @@
+{
+  "_note": "Site configuration for aodareport.ca. Prices, dates and contact details must match the offer in venture_lab/ventures/aoda-2026/venture.json.",
+  "business_name": "AODA Report Desk",
+  "founder_name": "Wissem Zrelli",
+  "city": "Toronto, Ontario",
+  "contact_email": "team@aodareport.ca",
+  "mailing_address": "15 Laidlaw St, Toronto, ON M6K 1X3",
+  "site_url": "https://aodareport.ca",
+  "booking_url": "{{site_url}}/start.html?intent=call",
+  "lead_form_action": "https://formsubmit.co/{{contact_email}}",
+  "currency": "CAD",
+  "prices": {
+    "tier_a_pilot": 650,
+    "tier_a_standard": 950,
+    "tier_b": 450,
+    "web_addon": 200
+  },
+  "pilot_slots": 5,
+  "order_cutoff": "2026-12-05",
+  "order_cutoff_label": "December 5, 2026",
+  "deadline": "2026-12-31",
+  "deadline_label": "December 31, 2026",
+  "delivery_business_days": 10,
+  "robots": "index,follow",
+  "ga_measurement_id": "G-1F41188HY3"
+}
